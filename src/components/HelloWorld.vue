@@ -5,8 +5,8 @@
         <img
           src="../assets/car.jpeg"
           class="w-60 cursor-pointer tri"
-          alt=""
           ref="tri"
+          @load="loadImage"
           crossorigin="anonymous"
         />
       </div>
@@ -22,7 +22,8 @@ import { start } from "./three";
 export default class HelloWorld extends Vue {
   timer: number | undefined = undefined;
   delay = 1000;
-  mounted(): void {
+  // when image loaded
+  loadImage(): void {
     this.$nextTick(() => {
       start(".particle-explode");
       this.timer = setTimeout(() => this.tri(), this.delay);
