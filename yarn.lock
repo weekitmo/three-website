@@ -1037,6 +1037,11 @@
   dependencies:
     "@types/node" "*"
 
+"@types/dat.gui@^0.7.7":
+  version "0.7.7"
+  resolved "https://registry.nlark.com/@types/dat.gui/download/@types/dat.gui-0.7.7.tgz?cache=0&sync_timestamp=1625740053952&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fdat.gui%2Fdownload%2F%40types%2Fdat.gui-0.7.7.tgz#2125aedfaa190364c5a50b0447858a7e159aea2e"
+  integrity sha1-ISWu36oZA2TFpQsER4WKfhWa6i4=
+
 "@types/eslint-scope@^3.7.0":
   version "3.7.1"
   resolved "https://registry.nlark.com/@types/eslint-scope/download/@types/eslint-scope-3.7.1.tgz?cache=0&sync_timestamp=1625598848492&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Feslint-scope%2Fdownload%2F%40types%2Feslint-scope-3.7.1.tgz#8dc390a7b4f9dd9f1284629efce982e41612116e"
@@ -1097,6 +1102,20 @@
   dependencies:
     "@types/node" "*"
 
+"@types/imagesloaded@^4.1.2":
+  version "4.1.2"
+  resolved "https://registry.nlark.com/@types/imagesloaded/download/@types/imagesloaded-4.1.2.tgz#da743c8d9f4a04f795e99d7921aae7c20af5d2e1"
+  integrity sha1-2nQ8jZ9KBPeV6Z15Iarnwgr10uE=
+  dependencies:
+    "@types/jquery" "*"
+
+"@types/jquery@*":
+  version "3.5.6"
+  resolved "https://registry.nlark.com/@types/jquery/download/@types/jquery-3.5.6.tgz?cache=0&sync_timestamp=1625608794875&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjquery%2Fdownload%2F%40types%2Fjquery-3.5.6.tgz#97ac8e36dccd8ad8ed3f3f3b48933614d9fd8cf0"
+  integrity sha1-l6yONtzNitjtPz87SJM2FNn9jPA=
+  dependencies:
+    "@types/sizzle" "*"
+
 "@types/json-schema@*", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.7", "@types/json-schema@^7.0.8":
   version "7.0.9"
   resolved "https://registry.nlark.com/@types/json-schema/download/@types/json-schema-7.0.9.tgz?cache=0&sync_timestamp=1627999389398&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fjson-schema%2Fdownload%2F%40types%2Fjson-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
@@ -1149,6 +1168,11 @@
   dependencies:
     "@types/mime" "^1"
     "@types/node" "*"
+
+"@types/sizzle@*":
+  version "2.3.3"
+  resolved "https://registry.nlark.com/@types/sizzle/download/@types/sizzle-2.3.3.tgz#ff5e2f1902969d305225a047c8a0fd5c915cebef"
+  integrity sha1-/14vGQKWnTBSJaBHyKD9XJFc6+8=
 
 "@types/source-list-map@*":
   version "0.1.2"
@@ -1400,7 +1424,7 @@
   resolved "https://registry.nlark.com/@vue/cli-overlay/download/@vue/cli-overlay-5.0.0-beta.3.tgz?cache=0&sync_timestamp=1628579324515&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-overlay%2Fdownload%2F%40vue%2Fcli-overlay-5.0.0-beta.3.tgz#e22abc680113b86fa6ee7621c967b0b2daaa9f62"
   integrity sha1-4iq8aAETuG+m7nYhyWewstqqn2I=
 
-"@vue/cli-plugin-babel@~5.0.0":
+"@vue/cli-plugin-babel@5.0.0-beta.3":
   version "5.0.0-beta.3"
   resolved "https://registry.nlark.com/@vue/cli-plugin-babel/download/@vue/cli-plugin-babel-5.0.0-beta.3.tgz?cache=0&sync_timestamp=1628579321178&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-plugin-babel%2Fdownload%2F%40vue%2Fcli-plugin-babel-5.0.0-beta.3.tgz#7c75e747dd7beecf68ee94c2f8f433b676130b91"
   integrity sha1-fHXnR9177s9o7pTC+PQztnYTC5E=
@@ -1412,7 +1436,7 @@
     thread-loader "^3.0.0"
     webpack "^5.22.0"
 
-"@vue/cli-plugin-eslint@~5.0.0":
+"@vue/cli-plugin-eslint@5.0.0-beta.3":
   version "5.0.0-beta.3"
   resolved "https://registry.nlark.com/@vue/cli-plugin-eslint/download/@vue/cli-plugin-eslint-5.0.0-beta.3.tgz?cache=0&sync_timestamp=1628579325292&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-plugin-eslint%2Fdownload%2F%40vue%2Fcli-plugin-eslint-5.0.0-beta.3.tgz#ec48ace6b62443bbe92bf440865b33e15a634777"
   integrity sha1-7Eis5rYkQ7vpK/RAhlsz4VpjR3c=
@@ -1431,7 +1455,7 @@
   dependencies:
     "@vue/cli-shared-utils" "^5.0.0-beta.3"
 
-"@vue/cli-plugin-typescript@~5.0.0":
+"@vue/cli-plugin-typescript@5.0.0-beta.3":
   version "5.0.0-beta.3"
   resolved "https://registry.nlark.com/@vue/cli-plugin-typescript/download/@vue/cli-plugin-typescript-5.0.0-beta.3.tgz#a84e3d25986548fb073571052b3ca1e6e84652b0"
   integrity sha1-qE49JZhlSPsHNXEFKzyh5uhGUrA=
@@ -1453,7 +1477,7 @@
   resolved "https://registry.nlark.com/@vue/cli-plugin-vuex/download/@vue/cli-plugin-vuex-5.0.0-beta.3.tgz#c131d381b47e8b32837b91f6249a2f7402b4f101"
   integrity sha1-wTHTgbR+izKDe5H2JJovdAK08QE=
 
-"@vue/cli-service@~5.0.0":
+"@vue/cli-service@5.0.0-beta.3":
   version "5.0.0-beta.3"
   resolved "https://registry.nlark.com/@vue/cli-service/download/@vue/cli-service-5.0.0-beta.3.tgz?cache=0&sync_timestamp=1628579323125&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcli-service%2Fdownload%2F%40vue%2Fcli-service-5.0.0-beta.3.tgz#67f79938e4b4da205f4480b87d59886724cf793b"
   integrity sha1-Z/eZOOS02iBfRIC4fVmIZyTPeTs=
@@ -2775,6 +2799,11 @@ csso@^4.2.0:
   dependencies:
     css-tree "^1.1.2"
 
+dat.gui@^0.7.7:
+  version "0.7.7"
+  resolved "https://registry.npm.taobao.org/dat.gui/download/dat.gui-0.7.7.tgz#7f96dbd21621a76385203659aebfa264ee6ae89b"
+  integrity sha1-f5bb0hYhp2OFIDZZrr+iZO5q6Js=
+
 de-indent@^1.0.2:
   version "1.0.2"
   resolved "https://registry.nlark.com/de-indent/download/de-indent-1.0.2.tgz#b2038e846dc33baa5796128d0804b455b8c1e21d"
@@ -3303,6 +3332,11 @@ etag@~1.8.1:
   resolved "https://registry.nlark.com/etag/download/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha1-Qa4u62XvpiJorr/qg6x9eSmbCIc=
 
+ev-emitter@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.npm.taobao.org/ev-emitter/download/ev-emitter-1.1.1.tgz#8f18b0ce5c76a5d18017f71c0a795c65b9138f2a"
+  integrity sha1-jxiwzlx2pdGAF/ccCnlcZbkTjyo=
+
 event-pubsub@4.3.0:
   version "4.3.0"
   resolved "https://registry.npm.taobao.org/event-pubsub/download/event-pubsub-4.3.0.tgz?cache=0&sync_timestamp=1606361507592&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fevent-pubsub%2Fdownload%2Fevent-pubsub-4.3.0.tgz#f68d816bc29f1ec02c539dc58c8dd40ce72cb36e"
@@ -3804,6 +3838,11 @@ graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0,
   resolved "https://registry.nlark.com/graceful-fs/download/graceful-fs-4.2.8.tgz?cache=0&sync_timestamp=1628194078324&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fgraceful-fs%2Fdownload%2Fgraceful-fs-4.2.8.tgz#e412b8d33f5e006593cbd3cee6df9f2cebbe802a"
   integrity sha1-5BK40z9eAGWTy9PO5t+fLOu+gCo=
 
+gsap@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.nlark.com/gsap/download/gsap-3.7.1.tgz?cache=0&sync_timestamp=1626381309302&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fgsap%2Fdownload%2Fgsap-3.7.1.tgz#1c5857f4fbcbd3f5ca0b513ef7abf828fbaa20a8"
+  integrity sha1-HFhX9PvL0/XKC1E+96v4KPuqIKg=
+
 gzip-size@^6.0.0:
   version "6.0.0"
   resolved "https://registry.npm.taobao.org/gzip-size/download/gzip-size-6.0.0.tgz#065367fd50c239c0671cbcbad5be3e2eeb10e462"
@@ -4078,6 +4117,13 @@ ignore@^5.1.4:
   version "5.1.8"
   resolved "https://registry.npm.taobao.org/ignore/download/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha1-8VCotQo0KJsz4i9YiavU2AFvDlc=
+
+imagesloaded@^4.1.4:
+  version "4.1.4"
+  resolved "https://registry.npm.taobao.org/imagesloaded/download/imagesloaded-4.1.4.tgz#1376efcd162bb768c34c3727ac89cc04051f3cc7"
+  integrity sha1-E3bvzRYrt2jDTDcnrInMBAUfPMc=
+  dependencies:
+    ev-emitter "^1.0.0"
 
 import-fresh@^3.0.0, import-fresh@^3.1.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -4600,6 +4646,11 @@ klona@^2.0.4:
   version "2.0.4"
   resolved "https://registry.npm.taobao.org/klona/download/klona-2.0.4.tgz#7bb1e3affb0cb8624547ef7e8f6708ea2e39dfc0"
   integrity sha1-e7Hjr/sMuGJFR+9+j2cI6i4538A=
+
+kyouka@1.2.2:
+  version "1.2.2"
+  resolved "https://registry.nlark.com/kyouka/download/kyouka-1.2.2.tgz#29031d7d50d9bfc908a1eeb8cdaa740c7337467d"
+  integrity sha1-KQMdfVDZv8kIoe64zap0DHM3Rn0=
 
 launch-editor-middleware@^2.2.1:
   version "2.2.1"
@@ -6817,6 +6868,11 @@ thread-loader@^3.0.0:
     loader-utils "^2.0.0"
     neo-async "^2.6.2"
     schema-utils "^3.0.0"
+
+three@0.124.0:
+  version "0.124.0"
+  resolved "https://registry.nlark.com/three/download/three-0.124.0.tgz#14ab1a26ba6c56e51190e1b55695cd3c1e69ea55"
+  integrity sha1-FKsaJrpsVuURkOG1VpXNPB5p6lU=
 
 through@^2.3.6:
   version "2.3.8"

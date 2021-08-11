@@ -1,7 +1,10 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <div class="typed-text">
+      <span>{{ output }}</span
+      ><sub class="sub-text">{{ outputSub }}</sub>
+    </div>
+    <HelloWorld />
   </div>
 </template>
 
@@ -14,7 +17,48 @@ import HelloWorld from "./components/HelloWorld.vue";
     HelloWorld,
   },
 })
-export default class App extends Vue {}
+export default class App extends Vue {
+  mounted(): void {
+    this.writerStart();
+  }
+
+  index = 0;
+  typedTimer: number | undefined = undefined;
+  text = `没有耐心和耐力，就别怪现实太现实。`;
+  subText = `powerby weekit`;
+  subIndex = 0;
+  get outputSub(): string {
+    return this.subText.substring(0, this.subIndex);
+  }
+  get output(): string {
+    return this.text.substring(0, this.index);
+  }
+  delay = 200;
+  writerStart(): void {
+    if (this.index < this.text.length) {
+      this.index++;
+      this.typedTimer = setTimeout(this.writerStart, this.delay);
+    } else if (this.index === this.text.length) {
+      this.clear();
+      this.writerStartSub();
+    }
+  }
+  writerStartSub(): void {
+    if (this.subIndex < this.subText.length) {
+      this.subIndex++;
+      this.typedTimer = setTimeout(this.writerStartSub, this.delay);
+    }
+  }
+
+  clear(): void {
+    clearTimeout(this.typedTimer);
+    this.typedTimer = undefined;
+  }
+
+  beforeDestroy(): void {
+    this.clear();
+  }
+}
 </script>
 
 <style lang="scss">
@@ -24,6 +68,47 @@ export default class App extends Vue {}
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: hsl(240, 56%, 98%);
+}
+
+.typed-text {
+  height: 60px;
+  font-size: 28px;
+  background-color: antiquewhite;
+  vertical-align: middle;
+  line-height: 60px;
+  .sub-text {
+    font-size: 14px;
+    margin-left: 10px;
+    color: red;
+    vertical-align: baseline;
+  }
+  /* 产生光标闪烁的效果 */
+  &::after {
+    content: "|";
+    color: darkgray;
+    animation: blink 1s infinite;
+  }
+}
+
+@keyframes blink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 </style>
