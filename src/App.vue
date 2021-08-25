@@ -4,17 +4,20 @@
       <span>{{ output }}</span
       ><sub class="sub-text">{{ outputSub }}</sub>
     </div>
-    <HelloWorld />
+    <!-- <HelloWorld /> -->
+    <Fire />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+// import HelloWorld from "./components/HelloWorld.vue";
+import Fire from "./components/Fire.vue";
 
 @Component({
   components: {
-    HelloWorld,
+    // HelloWorld,
+    Fire,
   },
 })
 export default class App extends Vue {
@@ -68,6 +71,7 @@ export default class App extends Vue {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
 }
 html,
 body {
@@ -80,19 +84,25 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background: hsl(240, 56%, 98%);
+  background: #000;
 }
 
 .typed-text {
   height: 60px;
   font-size: 28px;
-  background-color: antiquewhite;
+  background-color: #000;
   vertical-align: middle;
   line-height: 60px;
+  color: antiquewhite;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, 10px);
   .sub-text {
     font-size: 14px;
     margin-left: 10px;
-    color: red;
+    color: antiquewhite;
     vertical-align: baseline;
   }
   /* 产生光标闪烁的效果 */

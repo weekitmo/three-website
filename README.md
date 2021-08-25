@@ -2,4 +2,4 @@
 
 ---
 
-![screenshot](./screenshot/page.png)
+![screenshot](./screenshot/new.gif)
