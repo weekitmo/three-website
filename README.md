@@ -1,5 +1,5 @@
-## three-website
+## some special effects
 
 ---
 
-![screenshot](./screenshot/new.gif)
+![screenshot](./screenshot/page.png)
