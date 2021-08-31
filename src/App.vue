@@ -1,9 +1,10 @@
 <template>
   <div id="app">
-    <div class="typed-text">
+    <Hack class="hack"></Hack>
+    <!-- <div class="typed-text">
       <span>{{ output }}</span
       ><sub class="sub-text">{{ outputSub }}</sub>
-    </div>
+    </div> -->
     <!-- <HelloWorld /> -->
     <Fire />
   </div>
@@ -14,10 +15,13 @@ import { Component, Vue } from "vue-property-decorator";
 // import HelloWorld from "./components/HelloWorld.vue";
 import Fire from "./components/Fire.vue";
 
+import Hack from "./components/HackRain.vue";
+
 @Component({
   components: {
     // HelloWorld,
     Fire,
+    Hack,
   },
 })
 export default class App extends Vue {
@@ -28,7 +32,7 @@ export default class App extends Vue {
   index = 0;
   typedTimer: number | undefined = undefined;
   text = `没有耐心和耐力，就别怪现实太现实。`;
-  subText = `powerby weekit`;
+  subText = `powerby.weekit`;
   subIndex = 0;
   get outputSub(): string {
     return this.subText.substring(0, this.subIndex);
@@ -83,8 +87,18 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow: auto;
   margin: 0;
   background: #000;
+  position: relative;
+}
+.hack {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .typed-text {

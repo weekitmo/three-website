@@ -239,8 +239,14 @@ createFire.ParticleEmitter = class particleEmitter {
 createFire.init = () => {
   createFire.c = document.querySelector("canvas");
   createFire.ctx = createFire.c.getContext("2d");
-  createFire.w = createFire.c.width = 400;
-  createFire.h = createFire.c.height = 400;
+  const maxSize = 400;
+  let w = maxSize;
+  let h = maxSize;
+  if (window.innerWidth < maxSize) {
+    h = w = window.innerWidth;
+  }
+  createFire.w = createFire.c.width = w;
+  createFire.h = createFire.c.height = h;
   createFire.particleEmitters = [];
   createFire.tick = 1;
 
