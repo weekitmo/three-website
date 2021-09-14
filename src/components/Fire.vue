@@ -1,6 +1,6 @@
 <template>
   <div class="file-wrapper">
-    <canvas></canvas>
+    <canvas id="fire-canvas"></canvas>
     <div class="static"></div>
   </div>
 </template>

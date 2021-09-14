@@ -15,7 +15,7 @@ import { Component, Vue } from "vue-property-decorator";
 // import HelloWorld from "./components/HelloWorld.vue";
 import Fire from "./components/Fire.vue";
 
-import Hack from "./components/HackRain.vue";
+import Hack from "./components/HackRain2.vue";
 
 @Component({
   components: {

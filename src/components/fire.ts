@@ -237,7 +237,7 @@ createFire.ParticleEmitter = class particleEmitter {
 */
 
 createFire.init = () => {
-  createFire.c = document.querySelector("canvas");
+  createFire.c = document.querySelector("#fire-canvas");
   createFire.ctx = createFire.c.getContext("2d");
   const maxSize = 400;
   let w = maxSize;
